@@ -1,0 +1,129 @@
+
+/*Base*/
+
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .título{
+    color: var(--vermelho);
+    font-family: "Arial Black";
+    font-size: 50px;
+    margin-left: 3px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 15px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Série principal*/
+
+.Serie-principal{
+    font-size: 20px;
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, .50) 100%,
+      rgba(20, 20, 20, 0)
+    ),
+    url("../img/capa.jpg");
+    
+    height: 100vh;
+    background-size: cover;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-block-end: 60px;
+ 
+    
+}
+
+.Serie-principal .sinopse {
+    margin-bottom: 15%;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    font-style: italic;
+}    
+
+.Serie-principal .Titulos-da-serie{
+    margin-top: 15%;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(22, 2, 53, 0.349);
+    border: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 30px;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 15px, 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-inline-start: 60px;
+    
+    
+
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.botao:hover{
+    color: black;
+}
+
+.info{
+    text-decoration: none;
+    font-style: oblique;
+    color: white;
+    transition: 1s ease;
+}
+
+.info:hover{
+    color: black;
+}
+
+.Serie-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
